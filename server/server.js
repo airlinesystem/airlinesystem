@@ -10,7 +10,7 @@ mongoose.connect('mongodb://localhost/Users');
   app.use(bodyParser.urlencoded({extended: true}));
   app.use(bodyParser.json());
 
-//app.use(express.static("/Users/admin/Desktop/fullStack project/app"));
+app.use(express.static("./client"));
 //require('./config/routes.js')(app, express);
 app.listen(8000,function(){
 
