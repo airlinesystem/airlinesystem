@@ -8,22 +8,11 @@
   <link href="http://getbootstrap.com/examples/signin/signin.css" rel="stylesheet">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <!-- end -->
   <script src="index.js"></script>
 <!-- -->
 <style type="text/css">
- /*  div. #ant{
-    background-image:url('arlines.jpg'); 
-     background-color: #cccccc;
-     background-attachment: fixed;
-      background-position: center; 
-  }*/
-/*  body { 
-    background-image: url('arlines.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position:center;
-}*/
 html body { 
 background: url('JOR_BG.jpg') no-repeat center center fixed; 
 -webkit-background-size: cover;
@@ -34,9 +23,9 @@ background-size: cover;
 </style>
 </head>
 <body ng-app="MyApp" ng-controller="AppCT">
-  <div ng-controller="AppCtrl" ng-cloak>
+  <div>
     <h1>ARLINES</h1>
-    <div id="container" class= "ng-scope">
+    <div id="container">
       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <ul class="nav nav-tabs" role="tablist">
           <li class="nav-item">
@@ -55,15 +44,8 @@ background-size: cover;
         </ul>
 
       </nav>
-    </div id='#ant'>
- <!--    <div ng-repeat="post in posts">
-      {{post.title}} - upvotes {{post.upvotes}}
-    </div> -->
+    </div>
 
-   <!--  <form class="form-" role="form" ng-submit="sarch()">
-      <input type="text" ng-model="title"/> <input type="text" ng-model="title"/>
-      <input type="text" ng-model="title"/><input type="text" ng-model="title"/>
-    </form> -->
     <footer></footer>
   </body>
   </html>

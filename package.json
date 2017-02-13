@@ -1,7 +1,7 @@
 {
-  "name": "pass-keeper",
+  "name": "Airline",
   "version": "1.0.0",
-  "description": "pass-keeper",
+  "description": "Airline",
   "main": "server.js",
   "engines": {
     "node": ">=4.0.0",
@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server/server.js"
   },
   "author": "",
   "license": "ISC",
