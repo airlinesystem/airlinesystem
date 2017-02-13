@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var app = express();
 
 //////*****/////
-mongoose.connect('mongodb://localhost/Users');
+mongoose.connect('mongodb://root:nothing@ds135049.mlab.com:35049/ahmed_6569_db/Users');
 
 
   app.use(bodyParser.urlencoded({extended: true}));
