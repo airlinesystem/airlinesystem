@@ -1,9 +1,5 @@
 //app.js
-var myApp = angular.module('myApp',[
-		'myApp.signup',
-		'myApp.serv',
-		'ngRoute'
-	])
+var MyApp = angular.module('MyApp',['ngRoute'])
 .config(function ($routeProvider, $httpProvider) {
   //x$locationProvider.hashPrefix('')
   $routeProvider
@@ -11,9 +7,9 @@ var myApp = angular.module('myApp',[
       templateUrl: 'signup/signup.html',
       controller: 'signupCT'
     })
-    .when('/signin', {
-      templateUrl:'signin/signin.html',
-      controller:'signinCT'
+      .when('/', {
+      templateUrl: 'signin/signin.html',
+      controller: 'signinCT'
     })
     //  .when('/idyas', {
     //   templateUrl:'idyas/ideyas.html',
