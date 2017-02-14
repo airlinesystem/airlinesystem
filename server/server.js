@@ -11,7 +11,7 @@ mongoose.connect('mongodb://localhost/Users');
   app.use(bodyParser.json());
 
 app.use(express.static('./client'));
-//require('./config/routes.js')(app, express);
+require('./config/routes.js')(app, express);
 app.listen(8080,function(){
 
 console.log('server is listning 8080')	
