@@ -5,8 +5,8 @@
         </div>
         <form class="form-signin" role="form" ng-submit='signin()'>
             <input type="text" class="form-control" ng-model="data.username" placeholder="UserName">
-            <input type="password" class="form-control" ng-model="data.password" placeholder="Password" >
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+          <!--   <input type="password" class="form-control" ng-model="data.password" placeholder="Password" > -->
+        <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="signin()">Signin</button>
             <label class="checkbox">
                 <a href="#/signup"> Sign Up</>
         </label>
