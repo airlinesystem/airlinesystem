@@ -1,5 +1,10 @@
 //app.js
-angular.module('MyApp',['MyApp.signin','MyApp.signup','MyApp.offer','ngRoute'])
+angular.module('MyApp',[
+  'MyApp.serv',
+  'MyApp.signin',
+  'MyApp.signup',
+  'MyApp.offer',
+  'ngRoute'])
 .config(function ($routeProvider, $httpProvider) {
   //x$locationProvider.hashPrefix('')
   $routeProvider
@@ -11,7 +16,7 @@ angular.module('MyApp',['MyApp.signin','MyApp.signup','MyApp.offer','ngRoute'])
       templateUrl: 'signin/signin.html',
       controller: 'signinCT'
     })
-      .when('/',{
+      .when('/offer',{
         templateUrl: 'offerpage/offer.html',
         controller: 'offerCT'
       })

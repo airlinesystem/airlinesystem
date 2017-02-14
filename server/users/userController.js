@@ -1,11 +1,11 @@
-var User = require('./userModel.js');
+  var User = require('./userModel.js');
 
 module.exports = {
   signin: function (req, res) {
     User.findOne({
       userName:req.body.username,
-      userEmail:req.body.email,
-      userPhone:req.body.phone   	
+      //userEmail:req.body.email,
+     // userPhone:req.body.phone   	
     },
     function(err, users){
       if(err){
@@ -18,11 +18,11 @@ module.exports = {
     })
   },
 
-  signup: function (req, res) {    
+  signup: function (req, res) {   
     User.create({
-      userName:req.body.username,
-      userEmail:req.body.email,
-      userPhone:req.body.phone 
+      username:req.body.username,
+      //userEmail:req.body.email,
+      phone:req.body.phone 
     },
     function(err, user){
       if(err){
