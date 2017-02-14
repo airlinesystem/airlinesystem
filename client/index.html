@@ -66,61 +66,22 @@
       </nav>
     </div id='#ant'>
     <div class="container">
-    <div >
+      <div >
         <div class="container">
           <div class="row">
-            <div class="col-sm-4">  
-            </div>
-            <div class="col-sm-4">
-            </div>
-            <div class="col-sm-4">
-              <div ng-controller="signinCT" style="padding-bottom:0px;"> 
-              </div>
-              <form class="form-signin" role="form" ng-submit='signin()'>
-                <input type="text" class="form-control" ng-model="data.username" placeholder="UserName">
-                <input type="password" class="form-control" ng-model="data.password" placeholder="Password" >
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-                <label class="checkbox">
-                  <a href="/#/signup"> Sign Up</>
-                  </label>
-                </form> 
-              </div>
+            <div ng-view></div>
+          </div>
+        </div>
+      </md-content>
 
-    </div>
+    </div>    
   </div>
-</md-content>
-
-</div>    
-</div>
 
 </div>
-<!-- 
-<script src="/bower_components/angular/angular.js"></script>
---><script src="./bower_components/angular-route/angular-route.js"></script>
 
-  <script src="signup/signup.js"></script>
-  <script src="app.js"></script>
+<script src="./bower_components/angular-route/angular-route.js"></script>
+<script src="signin/signin.js"></script>
+<script src="signup/signup.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
-
-  <!-- <footer><ul></ul><i class="fa fa-plane" aria-hidden="true" fa-5x></i></footer> -->
-<!-- <script src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="./bower_components/jquery/dist/jquery.js"></script> -->
-     <!--  <div class="jumbotron">
-
-        <input type="" name="" ng-model="market"/> 
-        <input type="" name=""/>  <input type="" name=""/>
-        <md-input-container flex>
-          <label lang="en">Start date</label>
-          <input type="date" ng-model=""
-          lang="EN">
-        </md-input-container>
-        <md-input-container flex>
-          <label>End date</label>
-          <input type="date" >
-        </md-input-container>
-      </div> -->
-<!-- <script src="lib/angular/angular.js"></script>
-  <script src="lib/angular-route/angular-route.js"></script> -->
-<!-- <button>sup</button> -->
-  <!-- <script src="signin/signin.js"></script> -->
