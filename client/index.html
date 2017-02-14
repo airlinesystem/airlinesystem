@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>arlines</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <title>AIRLINES</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
   <!-- bootstrab -->
   <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="http://getbootstrap.com/examples/signin/signin.css" rel="stylesheet">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <!-- end -->
   <script src="index.js"></script>
-<!-- -->
-<style type="text/css">
-html body { 
-background: url('JOR_BG.jpg') no-repeat center center fixed; 
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-}
-</style>
+  <!-- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css">
+    html body { 
+      background: url('JOR_BG.jpg') no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    #wiste-title{
+      display: block;
+      max-width: 500px;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      display: inline-block;
+      max-width: 200px;
+      color: #16161d;
+      font-size: 40px;
+
+    }
+  </style>
 </head>
 <body ng-app="MyApp" ng-controller="AppCT">
-  <div>
-    <h1>ARLINES</h1>
-    <div id="container">
+
+  <div ng-controller="AppCtrl" ng-cloak>
+    <h1><span id="wiste-title">AIRLINES</span></h1>
+    <div id="container" class= "ng-scope">
       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <ul class="nav nav-tabs" role="tablist">
           <li class="nav-item">
@@ -44,8 +57,40 @@ background-size: cover;
         </ul>
 
       </nav>
-    </div>
+    </div id='#ant'>
+    <div class="container">
+      <div class="jumbotron">
 
-    <footer></footer>
-  </body>
-  </html>
+        <input type="" name="" ng-model="market"/> 
+        <input type="" name=""/>  <input type="" name=""/>
+        <md-input-container flex>
+          <label lang="en">Start date</label>
+          <input type="date" ng-model=""
+          lang="EN">
+        </md-input-container>
+        <md-input-container flex>
+          <label>End date</label>
+          <input type="date" >
+        </md-input-container>
+      </div>
+    </div>
+  </div>
+</md-content>
+<button>sup</button>
+
+</div>    
+</div>
+
+</div>
+
+
+<footer><ul></ul><i class="fa fa-plane" aria-hidden="true" fa-5x></i></footer>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular-route/angular-route.js"></script>
+<script src="signin/signin.js"></script>
+<script src="signup/singup.js"></script>
+
+
+</body>
+</html>
+
