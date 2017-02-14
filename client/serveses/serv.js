@@ -19,7 +19,7 @@
       }).then(function(resp){
         return resp.data;
       })
-    },
+    }
    //     addtext: function(utr){
    //   return $http({
    //    method: 'POST',
