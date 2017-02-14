@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module('myApp.signup', ['ngRoute'])
+angular.module('MyApp.signup', ['ngRoute'])
 
 .controller('signupCT', function($scope, account, $location) {
   $scope.data = {};

@@ -1,6 +1,6 @@
-'use strict';
-angular.module('myApp.signin', ['ngRoute'])
-.controller('signinCT', function($scope, account,$location) {
+ var app = angular.module('MyApp',[]);
+
+app.controller('signinCT', function($scope, account,$location) {
   $scope.data = {};
   $scope.signin=function(){
 	  account.signin($scope.data).then(function(data){
@@ -14,3 +14,7 @@ angular.module('myApp.signin', ['ngRoute'])
 	  })
 	}
 });
+
+
+
+
