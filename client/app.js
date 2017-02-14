@@ -2,7 +2,6 @@
 var myApp = angular.module('myApp',[
 		'myApp.signup',
 		'myApp.serv',
-    'myApp.signin',
 		'ngRoute'
 	])
 .config(function ($routeProvider, $httpProvider) {

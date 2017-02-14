@@ -1,4 +1,4 @@
- angular.module('myApp.serv', [])
+ angular.module('MyApp.serv', [])
 .factory('account', function ($http) {
   return {
     signin: function(user){

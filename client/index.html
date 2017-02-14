@@ -3,47 +3,47 @@
 <head>
   <title>AIRLINES</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-
-  <!-- bootstrab -->
-  <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="http://getbootstrap.com/examples/signin/signin.css" rel="stylesheet">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- end -->
-  <script src="index.js"></script>
-  <!-- -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style type="text/css">
-    html body { 
-      background: url('JOR_BG.jpg') no-repeat center center fixed; 
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-    #wiste-title{
-      display: block;
-      max-width: 500px;
-      font-family: 'Oswald', sans-serif;
-      font-weight: 700;
-      display: inline-block;
-      max-width: 200px;
-      color: #16161d;
-      font-size: 40px;
-
-    }
-    a {
-    color: black;
-}
-div nav{
-  color: red
+<!--   <script src="/bower_components/angular-route/angular-route.js"></script>
+-->
+<!-- bootstrab -->
+<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://getbootstrap.com/examples/signin/signin.css" rel="stylesheet">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- end -->
+<script src="index.js"></script>
+<!-- -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+  html body { 
+    background: url('JOR_BG.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
-  </style>
+  #wiste-title{
+    display: block;
+    max-width: 500px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    max-width: 200px;
+    color: #16161d;
+    font-size: 40px;
+
+  }
+  a {
+    color: black;
+  }
+  div nav{
+    color: red
+  }
+</style>
 
 </head>
-<body ng-app="myApp" ng-controller="AppCT">
-
-  <div ng-controller="AppCtrl" ng-cloak>
+<body ng-app="MyApp">
+  <div>
     <h1><span id="wiste-title">AIRLINES</span></h1>
     <div id="container" class= "ng-scope">
       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -66,26 +66,46 @@ div nav{
       </nav>
     </div id='#ant'>
     <div class="container">
-    <div  ng-controller="signinCT">
-    <div class="container">
-  <div class="row">
-    <div class="col-sm-4">  
-    </div>
-    <div class="col-sm-4">
-    </div>
-    <div class="col-sm-4">
-        <div  style="padding-bottom:0px;"> 
-        </div>
-        <form class="form-signin" role="form" ng-submit='signin()'>
-          <input type="text" class="form-control" ng-model="data.username" placeholder="UserName">
-          <input type="password" class="form-control" ng-model="data.password" placeholder="Password" >
-          <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-          <label class="checkbox">
-            <a href="/#/signup"> Sign Up</>
-            </label>
-          </form> 
-        </div>
+    <div >
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">  
+            </div>
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+              <div ng-controller="signinCT" style="padding-bottom:0px;"> 
+              </div>
+              <form class="form-signin" role="form" ng-submit='signin()'>
+                <input type="text" class="form-control" ng-model="data.username" placeholder="UserName">
+                <input type="password" class="form-control" ng-model="data.password" placeholder="Password" >
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+                <label class="checkbox">
+                  <a href="/#/signup"> Sign Up</>
+                  </label>
+                </form> 
+              </div>
 
+    </div>
+  </div>
+</md-content>
+
+</div>    
+</div>
+
+</div>
+<!-- 
+<script src="/bower_components/angular/angular.js"></script>
+--><script src="./bower_components/angular-route/angular-route.js"></script>
+
+  <script src="signup/signup.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
+  <!-- <footer><ul></ul><i class="fa fa-plane" aria-hidden="true" fa-5x></i></footer> -->
+<!-- <script src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="./bower_components/jquery/dist/jquery.js"></script> -->
      <!--  <div class="jumbotron">
 
         <input type="" name="" ng-model="market"/> 
@@ -100,24 +120,7 @@ div nav{
           <input type="date" >
         </md-input-container>
       </div> -->
-    </div>
-  </div>
-</md-content>
+<!-- <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular-route/angular-route.js"></script> -->
 <!-- <button>sup</button> -->
-
-</div>    
-</div>
-
-</div>
-
-
-<script src="lib/angular/angular.js"></script>
-<script src="lib/angular-route/angular-route.js"></script>
-<script src="signin/signin.js"></script>
-<script src="signup/singup.js"></script>
-
-
-<footer><ul></ul><i class="fa fa-plane" aria-hidden="true" fa-5x></i></footer>
-</body>
-</html>
-
+  <!-- <script src="signin/signin.js"></script> -->

@@ -4,17 +4,17 @@ var bodyParser = require('body-parser');
 var app = express();
 
 //////*****/////
-mongoose.connect('mongodb://root:nothing@ds135049.mlab.com:35049/ahmed_6569_db/Users');
+mongoose.connect('mongodb://localhost/Users');
 
 
   app.use(bodyParser.urlencoded({extended: true}));
   app.use(bodyParser.json());
 
-app.use(express.static("../client"));
+app.use(express.static('./client'));
 //require('./config/routes.js')(app, express);
-app.listen(process.env.PORT || 8000,function(){
+app.listen(8080,function(){
 
-console.log('server is listning 8000')	
+console.log('server is listning 8080')	
 });
 
 module.exports = app;
