@@ -32,9 +32,16 @@
       font-size: 40px;
 
     }
+    a {
+    color: black;
+}
+div nav{
+  color: red
+  }
   </style>
+
 </head>
-<body ng-app="MyApp" ng-controller="AppCT">
+<body ng-app="myApp" ng-controller="AppCT">
 
   <div ng-controller="AppCtrl" ng-cloak>
     <h1><span id="wiste-title">AIRLINES</span></h1>
@@ -48,18 +55,38 @@
             <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Profile</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#ABUT US" role="tab">ABUT US</a>
+            <a class="nav-link" data-toggle="tab" href="#About us" role="tab">About us</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#LOGOUT" role="tab">LOGOUT</a>
+            <a class="nav-link" data-toggle="tab" href="#Logout" role="tab">Logout</a>
           </li>
         </ul>
 
       </nav>
     </div id='#ant'>
     <div class="container">
-      <div class="jumbotron">
+    <div  ng-controller="signinCT">
+    <div class="container">
+  <div class="row">
+    <div class="col-sm-4">  
+    </div>
+    <div class="col-sm-4">
+    </div>
+    <div class="col-sm-4">
+        <div  style="padding-bottom:0px;"> 
+        </div>
+        <form class="form-signin" role="form" ng-submit='signin()'>
+          <input type="text" class="form-control" ng-model="data.username" placeholder="UserName">
+          <input type="password" class="form-control" ng-model="data.password" placeholder="Password" >
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+          <label class="checkbox">
+            <a href="/#/signup"> Sign Up</>
+            </label>
+          </form> 
+        </div>
+
+     <!--  <div class="jumbotron">
 
         <input type="" name="" ng-model="market"/> 
         <input type="" name=""/>  <input type="" name=""/>
@@ -72,11 +99,11 @@
           <label>End date</label>
           <input type="date" >
         </md-input-container>
-      </div>
+      </div> -->
     </div>
   </div>
 </md-content>
-<button>sup</button>
+<!-- <button>sup</button> -->
 
 </div>    
 </div>
@@ -84,13 +111,13 @@
 </div>
 
 
-<footer><ul></ul><i class="fa fa-plane" aria-hidden="true" fa-5x></i></footer>
 <script src="lib/angular/angular.js"></script>
 <script src="lib/angular-route/angular-route.js"></script>
 <script src="signin/signin.js"></script>
 <script src="signup/singup.js"></script>
 
 
+<footer><ul></ul><i class="fa fa-plane" aria-hidden="true" fa-5x></i></footer>
 </body>
 </html>
 
