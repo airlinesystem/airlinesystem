@@ -4,7 +4,8 @@ var bodyParser = require('body-parser');
 var app = express();
 
 //////*****/////
-mongoose.connect(process.env.databaseurl ||'mongodb://root:nothing@ds135049.mlab.com:35049/ahmed_6569_db');
+var mongoURI = process.env.MONGODB_URI || 'mongodb://localhost/airlines';
+mongoose.connect(mongoURI);
 
 
 app.use(bodyParser.urlencoded({extended: true}));
