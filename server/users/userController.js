@@ -2,8 +2,9 @@
 
 module.exports = {
   signin: function (req, res) {
-
+    console.log(req.body, req.data+"line 5 ")
     User.findOne({
+
       username:req.body.username,
       //userEmail:req.body.email,
      // userPhone:req.body.phone   	
@@ -21,7 +22,7 @@ module.exports = {
 
   signup: function (req, res) {   
     console.log(req.body.phone)
-    console.log(req.body.username)
+    //console.log(req.body.username)
     User.create({
       username:req.body.username,
       //userEmail:req.body.email,
