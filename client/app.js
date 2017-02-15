@@ -4,6 +4,7 @@ angular.module('MyApp',[
   'MyApp.signin',
   'MyApp.signup',
   'MyApp.offer',
+  'MyApp.about',
   'ngRoute'])
 .config(function ($routeProvider, $httpProvider) {
 
@@ -20,6 +21,10 @@ angular.module('MyApp',[
         templateUrl: 'offerpage/offer.html',
         controller: 'offerCT'
       })
+      .when('/aboutUs', {
+      templateUrl: 'aboutUs/aboutUs.html',
+      controller: 'aboutCT'
+    })
     
     })
    
