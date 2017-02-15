@@ -1,5 +1,5 @@
 angular.module('MyApp.serv', [])
-.factory('account', function ($http) {
+.factory('account', function ($http, $location, $window) {
   return {
     signin : function (user) {
       return $http({
@@ -20,6 +20,13 @@ angular.module('MyApp.serv', [])
       .then(function (resp) {
         return resp.data.token;
       });
+    },
+    isAuth : function () {
+      return !!$window.localStorage.getItem('token.airline');
+    },
+    signout : function () {
+      $window.localStorage.removeItem('token.airline');
+      $location.path('/signin');
     }  
   }
 })
