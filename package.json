@@ -1,7 +1,7 @@
 {
-  "name": "pass-keeper",
+  "name": "Airline",
   "version": "1.0.0",
-  "description": "pass-keeper",
+  "description": "Airline system",
   "main": "server.js",
   "engines": {
     "node": ">=4.0.0",
