@@ -1,4 +1,4 @@
-'use strict';
+
 angular.module('MyApp.signin', [])
 .controller('signinCT', function($scope, account,$location) {
   $scope.data = {};
