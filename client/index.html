@@ -4,9 +4,10 @@
   <title>AIRLINES</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
-
+  <link rel="stylesheet" type="text/css" href="infoPage/info.css">
   <link rel="stylesheet" type="text/css" href="offerpage/offer.css">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="http://getbootstrap.com/examples/signin/signin.css" rel="stylesheet">
   <meta name="description" content="">
@@ -18,6 +19,47 @@
       background: url('JOR_BG.jpg') no-repeat center center fixed; 
       background-size: 100% 100%;
     }
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto
+    }
+    section#contact {
+    background-color: #222222;
+    background-image: url('http://artdnaswitchbd.com/componants/images/map-image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+section {
+    padding: 30px 0PX;
+}
+section#contact .section-heading {
+    color: white;
+}
+section#contact .form-group {
+    margin-bottom: 25px;
+}
+section#contact .form-group input,
+section#contact .form-group textarea {
+    padding: 20px;
+}
+section#contact .form-group input.form-control {
+    height: auto;
+}
+section#contact .form-group textarea.form-control {
+    height: 236px;
+}
+section#contact .form-control:focus {
+    border-color: #fed136;
+    box-shadow: none;
+}
+section#contact ::-webkit-input-placeholder {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #eeeeee;
+}
+.gellary_bg_none img
     #wiste-title{
       display: block;
       max-width: 500px;
@@ -52,45 +94,52 @@
       <nav  class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <ul class="nav nav-tabs" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" role="tab" class="navbar-brand" href="#"><img class="img" src="airplane.png" alt="Dispute Bills"></a>
+            <a class="nav-link active" data-toggle="tab" role="tab" class="navbar-brand" href="#aboutUs"><img class="img" src="airplane.png" alt="Dispute Bills"></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#index" role="tab">Home</a>
+        <!--   <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#" role="tab">Home</a>
           </li>
-          
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#offer" role="tab">offers</a>
-          </li>
-          <li class="nav-item" >
-            <a class="nav-link" data-toggle="tab" href="#aboutUs" role="tab">About us</a>
-          </li>
+        -->
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#offer" role="tab">offers</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link" data-toggle="tab" href="#aboutUs" role="tab">About us</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#coon" role="tab">contact us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#signin" role="tab">Signin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#signout" role="tab">Signout</a>
+        </li>
+      </ul>
 
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#signin" role="tab">Signin</a>
-          </li>
-        </ul>
-
-      </nav>
-    </div id='#ant'>
-    <div class="container">
-      <div >
-        <div class="container">
-          <div class="row">
-            <div ng-view></div>
-          </div>
+    </nav>
+  </div id='#ant'>
+  <div class="container">
+    <div >
+      <div class="container">
+        <div class="row">
+          <div ng-view></div>
         </div>
-      </md-content>
+      </div>
+    </md-content>
 
-    </div>    
-  </div>
+  </div>    
+</div>
 
 </div>
+<script src="signout/signout.js"></script>
 <script src="signin/signin.js"></script>
 <script src="signup/signup.js"></script>
-<script src="app.js"></script>
 <script src="services/serv.js"></script>
 <script src="offerpage/offer.js"></script>
 <script src="aboutUs/aboutUs.js"></script>
-
+<script src="infoPage/info.js"></script>
+<script src="connect/coon.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

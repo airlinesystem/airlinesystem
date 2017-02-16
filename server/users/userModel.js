@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-
+var Q = require('q');
 
 var UserSchema = new mongoose.Schema({
   username: {
