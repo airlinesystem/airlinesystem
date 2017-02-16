@@ -12,6 +12,7 @@ angular.module('MyApp.serv', [])
       });
     },
     signup : function (user) {
+      console.log('im in the serv',user)
       return $http({
         method: 'POST',
         url: '/api/users/signup',
@@ -25,6 +26,7 @@ angular.module('MyApp.serv', [])
       return !!$window.localStorage.getItem('token.airline');
     },
     signout : function () {
+      console.log('in ser')
       $window.localStorage.removeItem('token.airline');
       $location.path('/signin');
     }  

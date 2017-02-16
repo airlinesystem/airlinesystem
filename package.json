@@ -21,9 +21,11 @@
     "foobar": "^1.1.0",
     "jwt-simple": "^0.5.1",
     "mongoose": "^4.8.1",
+    "morgan": "^1.8.1",
     "nodemon": "^1.11.0",
     "npm-cli": "^0.1.0",
-    "parser": "^0.1.4"
+    "parser": "^0.1.4",
+    "q": "^1.4.1"
   },
   "devDependencies": {}
 }
