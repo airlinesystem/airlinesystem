@@ -8,7 +8,7 @@ var app = express();
 // mongoose.connect(mongoURI);
 mongoose.connect('mongodb://root:123@ds161038.mlab.com:61038/mymongodb');
 
-
+//mongoose.connect('mongodb://localhost/airline')
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 

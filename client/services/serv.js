@@ -11,6 +11,7 @@ angular.module('MyApp.serv', [])
         return resp.data.token;
       });
     },
+
     signup : function (user) {
       console.log('im in the serv',user)
       return $http({
@@ -26,7 +27,7 @@ angular.module('MyApp.serv', [])
       return !!$window.localStorage.getItem('token.airline');
     },
     signout : function () {
-      console.log('in ser')
+      //console.log('in ser')
       $window.localStorage.removeItem('token.airline');
       $location.path('/signin');
     }  

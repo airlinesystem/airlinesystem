@@ -15,13 +15,11 @@ module.exports = {
    .then(function (user) {
      if(!user){
       throw new Error('User not found')
-    }else{//if(password === user.password){
+    }else{
 
       var token = jwt.encode(user, 'secret');
      return res.json({token: token});
-      // }else{
-      //   return new Error('Wrong password');
-      // }
+    
     }
   })
  },
@@ -34,11 +32,7 @@ module.exports = {
   console.log('im in contrllers')
   
   var  newUser = new User(req.body);
-     // createUser({
-     //    username:username,
-     //    password:password,
-     //    phone:phonenum 
-     //  })
+  
      console.log(newUser)
      newUser.save(function(err,user){
       if(err){
