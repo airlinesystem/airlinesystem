@@ -134,7 +134,11 @@ h5{
 
   </div>    
 </div>
-
+<script type="text/javascript">
+  $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+</script>
 </div>
 <script src="signout/signout.js"></script>
 <script src="signin/signin.js"></script>
