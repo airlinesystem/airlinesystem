@@ -4,6 +4,8 @@
   <title>AIRLINES</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+  <link rel="stylesheet" type="text/css" href="infoPage/info.css">
+  <link rel="stylesheet" type="text/css" href="offerpage/offer.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -16,63 +18,48 @@
     html body { 
       background: url('JOR_BG.jpg') no-repeat center center fixed; 
       background-size: 100% 100%;
-    }#rb_0{
-      margin-left: 300px;
     }
-
-    #cbDirect{
-      margin-left: 600px;
-    }
-
-    p{
-      margin-left: 450px;
-    }
-
-    #info{
-      margin-left: 100px;
-    }
-
     .carousel-inner > .item > img,
     .carousel-inner > .item > a > img {
       width: 70%;
       margin: auto
     }
     section#contact {
-      background-color: #222222;
-      background-image: url('http://artdnaswitchbd.com/componants/images/map-image.png');
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    section {
-      padding: 30px 0PX;
-    }
-    section#contact .section-heading {
-      color: white;
-    }
-    section#contact .form-group {
-      margin-bottom: 25px;
-    }
-    section#contact .form-group input,
-    section#contact .form-group textarea {
-      padding: 20px;
-    }
-    section#contact .form-group input.form-control {
-      height: auto;
-    }
-    section#contact .form-group textarea.form-control {
-      height: 236px;
-    }
-    section#contact .form-control:focus {
-      border-color: #fed136;
-      box-shadow: none;
-    }
-    section#contact ::-webkit-input-placeholder {
-      font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      text-transform: uppercase;
-      font-weight: 700;
-      color: #eeeeee;
-    }
-    .gellary_bg_none img
+    background-color: #222222;
+    background-image: url('http://artdnaswitchbd.com/componants/images/map-image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+section {
+    padding: 30px 0PX;
+}
+section#contact .section-heading {
+    color: white;
+}
+section#contact .form-group {
+    margin-bottom: 25px;
+}
+section#contact .form-group input,
+section#contact .form-group textarea {
+    padding: 20px;
+}
+section#contact .form-group input.form-control {
+    height: auto;
+}
+section#contact .form-group textarea.form-control {
+    height: 236px;
+}
+section#contact .form-control:focus {
+    border-color: #fed136;
+    box-shadow: none;
+}
+section#contact ::-webkit-input-placeholder {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #eeeeee;
+}
+.gellary_bg_none img
     #wiste-title{
       display: block;
       max-width: 500px;
@@ -109,10 +96,7 @@
           <li class="nav-item">
             <a class="nav-link active" data-toggle="tab" role="tab" class="navbar-brand" href="#aboutUs"><img class="img" src="airplane.png" alt="Dispute Bills"></a>
           </li>
-        <!--   <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#" role="tab">Home</a>
-          </li>
-        -->
+      
         <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#offer" role="tab">offers</a>
         </li>
@@ -120,7 +104,7 @@
           <a class="nav-link" data-toggle="tab" href="#aboutUs" role="tab">About us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#coon" role="tab">contact us</a>
+        <a class="nav-link" data-toggle="tab" href="#coon" role="tab">contact us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#signin" role="tab">Signin</a>

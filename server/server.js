@@ -3,12 +3,9 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var app = express();
 
-//////*****/////
-// var mongoURI = '';
-// mongoose.connect(mongoURI);
 mongoose.connect('mongodb://kaka:123@ds153709.mlab.com:53709/my_db');
 
-//mongoose.connect('mongodb://localhost/airline')
+
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
