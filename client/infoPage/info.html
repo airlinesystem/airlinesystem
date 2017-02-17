@@ -14,37 +14,37 @@
   <link rel="stylesheet" type="text/css" href="info.css">
 </head> -->
 <!-- <body>
- -->
+-->
 <div class="container">
-  <br>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
+	<br>
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+		</ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="infoPage/airplain.jpg" style="height:200px">
-      </div>
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img src="infoPage/airplain.jpg" style="height:200px">
+			</div>
 
-      <div class="item">
-        <img src="infoPage/sky.jpg" style="height:200px">
-      </div>
-    
-      <div class="item">
-        <img src="infoPage/a.jpg" style="height:200px">
-      </div>
+			<div class="item">
+				<img src="infoPage/sky.jpg" style="height:200px">
+			</div>
 
-      <div class="item">
-        <img src="infoPage/s.jpg" style="height:200px">
-      </div>
-    </div>
-  </div>
+			<div class="item">
+				<img src="infoPage/a.jpg" style="height:200px">
+			</div>
+
+			<div class="item">
+				<img src="infoPage/s.jpg" style="height:200px">
+			</div>
+		</div>
+	</div>
 </div></br>
 <center>
 </span> <label>Departing</label> <input name="txtDateR1" type="text" id="txtDateR1" class="small" title="click to pick a date"> </center></br>
@@ -55,56 +55,80 @@
 <input id="cbDirect" type="checkbox" name="cbDirect" checked="checked"> <label>Economy Class</label></br>
 <input id="cbDirect" type="checkbox" name="cbDirect" checked="checked"> <label>Business Class </label></br></br>
 <h5>Travelers
-<select class="custom-select">
-  <option selected>1</option>
-  <option value="1">2</option>
-  <option value="2">3</option>
-  <option value="3">4</option>
-  <option value="3">5</option>
-  <option value="3">6</option>
-  <option value="3">7</option>
-  <option value="3">8</option>
-  <option value="3">9</option>
-</select>
+	<select class="custom-select">
+		<option selected>1</option>
+		<option value="1">2</option>
+		<option value="2">3</option>
+		<option value="3">4</option>
+		<option value="3">5</option>
+		<option value="3">6</option>
+		<option value="3">7</option>
+		<option value="3">8</option>
+		<option value="3">9</option>
+	</select>
 </h5>
 <h5>Children 
-<select class="custom-select">
-  <option selected>0</option>
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="3">4</option>
-  <option value="3">5</option>
-</select>
+	<select class="custom-select">
+		<option selected>0</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="3">4</option>
+		<option value="3">5</option>
+	</select>
 </h5></br>
 <div id='info'>
- <label>Place and date of birth</label>
-<input name="txtDateR1" type="text" id="txtDateR1" class="small" title="click to pick a date">
- <label>Phone number</label>
-<input name="txtDateR1" type="text" id="txtDateR1" class="small" title="click to pick a date">
- <label>Passport number</label><input name="txtDateR1" type="text" id="txtDateR1" class="small" title="click to pick a date">
- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-  Book your seat
+	<label>Place and date of birth</label>
+	<input name="txtDateR1" type="text" id="txtDateR1" class="small" title="click to pick a date">
+	<label>Phone number</label>
+	<input name="txtDateR1" type="text" id="txtDateR1" class="small" title="click to pick a date">
+	<label>Passport number</label><input name="txtDateR1" type="text" id="txtDateR1" class="small" title="click to pick a date">
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+		Book your seat
 
-</button>
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">SW Airlines</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Now you will be directed to the financial payment system
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" ng-click="byment()">Continue</button>
-      </div>
-    </div>
-  </div>
-</div>
+	</button>
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">SW Airlines <i class="fa fa-credit-card"></i></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+
+					Now you will be directed to the financial payment system
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Sorry">
+						Continue
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- div sorry in prosses -->
+	<div class="modal fade" id="Sorry" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">SW Airlines</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body"> <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+					Sorry payment system under construction
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					
+				</div>
+			</div>
+		</div>
+	</div>
 </div></br>
 
