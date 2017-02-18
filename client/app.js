@@ -8,6 +8,7 @@ angular.module('MyApp',[
   'MyApp.info',
   'MyApp.coon',
   'MyApp.signout',
+  "MyApp.by",
   'ngRoute'])
 .config(function ($routeProvider, $httpProvider) {
   $routeProvider
@@ -22,6 +23,11 @@ angular.module('MyApp',[
   .when('/signin', {
     templateUrl: 'signin/signin.html',
     controller: 'signinCT'
+  })
+  .when('/by', {
+    template: 'by/by.html',
+    controller: 'byCT',
+    authenticate: true
   })
   .when('/offer',{
     templateUrl: 'offerpage/offer.html',
@@ -44,7 +50,7 @@ angular.module('MyApp',[
     authenticate: true
   })
   .otherwise({
-    redirectTo: '/index'
+    redirectTo: '/signup'
   });
   $httpProvider.interceptors.push('AttachTokens');
 })
